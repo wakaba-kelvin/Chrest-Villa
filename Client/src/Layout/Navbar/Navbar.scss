@@ -1,0 +1,31 @@
+.navbar{
+    height: 10dvh ;
+    width: 100vw;
+    // border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .middle{
+        list-style: none;
+        display: flex;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+    }
+    .end{
+        display: flex;
+        gap: 2rem;
+        button{
+            height: 2.4rem;
+            width: 9rem;
+            background-color:#e93740 ;
+            color: aliceblue ;
+            border-radius: 100vw;
+            border-style: none;
+        }
+    }
+}

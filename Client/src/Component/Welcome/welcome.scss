@@ -1,0 +1,36 @@
+.Welcome{
+    height: 80dvh ;
+    width: 100vw;
+    background-image: url(../../assets/family.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #f47878;
+    margin: 0;
+    .head{
+        display: flex;
+        gap: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+        .discover{
+            color:#ffff;
+        }
+        .perfect{
+            color: #e93740;
+        }
+        
+
+
+    }
+    .rent{
+        font-size: 25px;
+        gap: 1rem;
+        font-weight: 500;
+    }
+
+}
