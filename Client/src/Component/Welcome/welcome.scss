@@ -1,36 +1,101 @@
-.Welcome{
-    height: 80dvh ;
-    width: 100vw;
-    background-image: url(../../assets/family.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    // border: 2px solid green;
+
+.Welcome {
+  height: 80vh;
+  width: 100vw;
+  background-image: url(../../assets/family.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #eaebe6;
+  font-weight: 800;
+  margin: 0;
+
+  .head {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
-    color: #f47878;
-    margin: 0;
-    .head{
-        display: flex;
-        gap: 1rem;
-        font-size: 2rem;
-        font-weight: 700;
-        .discover{
-            color:#ffff;
-        }
-        .perfect{
-            color: #e93740;
-        }
-        
+    font-size: 2rem;
+    font-weight: 700;
 
-
-    }
-    .rent{
-        font-size: 25px;
-        gap: 1rem;
-        font-weight: 500;
+    .discover {
+      color: #ffff;
     }
 
+    .perfect {
+      color: #e93740;
+    }
+  }
+
+  .rent {
+    font-size: 25px;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+  .options {
+    gap: 2rem;
+
+    button {
+      height: 2rem;
+      width: 6rem;
+      border-radius: 100vw;
+      border-style: none;
+      margin-right: 1rem;
+      font-size: 18px;
+      font-size: medium;
+    }
+  }
+
+  .search {
+    display: flex;
+    // gap: 1rem;
+    align-items: center;
+
+    .search-input {
+      height: 3rem;
+      width: 20rem;
+      border-style: none;
+      position: relative;
+
+      &::before {
+        content: '\1F50D'; /* Unicode for search icon */
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #999; /* Adjust icon color */
+      }
+    }
+
+    .location-select {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      width: 15rem;
+      border: 1px solid #ccc; 
+      border-radius: 5px; /* Add border radius for aesthetics */
+      position: relative;
+
+      select {
+        height: 100%;
+        width: calc(100% - 2.5rem); /* Adjust width for the select box */
+        border-style: none;
+        appearance: none; /* Remove default appearance */
+        background-color: #fff;
+        padding: 0.5rem; /* Add padding for aesthetics */
+      }
+
+      .location-icon {
+        position: absolute;
+        right: 0.5rem;
+        font-size: 1.2rem;
+        color: #999; 
+      }
+    }
+  }
 }
+
